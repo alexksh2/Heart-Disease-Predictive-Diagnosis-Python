@@ -21,62 +21,16 @@ This data set dates from 1988 and consists of four databases: Cleveland, Hungary
 
 
 # Model Results
-__1. Logistic Regression__ <br>
-   Overall Accuracy Rate: 208/250 = __83.2%__ <br>
-   F1 score: 0.8384615 <br>
-   F2 score: 0.8582677 <br>
-
-__2. K-Nearest Neighbours__ <br>
-   Overall Accuracy Rate: 211/250 = __84.4%__ <br>
-   F1 score: 0.8368201 <br>
-   F2 score: 0.8143322 <br>
-
-__3. Classification and Regression Tree (Classification)__ <br>
-   Overall Accuracy Rate: 234/250 = __93.6%__ <br>
-   F1 score: 0.936 <br>
-   F2 score: 0.936 <br>
-
-__4. Random Forest__ <br>
-   Overall Accuracy Rate: 244/250 = __97.6%__ <br>
-   F1 score: 0.9758065 <br>
-   F2 score: 0.9711075 <br>
-   
 
 __Intrepretation of Model Results:__ <br>
-The analytical results found that __Random Forest Model has the highest predictive accuracy on heart disease predictive diagnosis__ as it has the highest overall accuracy rate (97%), F1 score and F2 score as compared to __logistic regression model, K-Nearest Neighbors model and Classification and Regression Tree Model__.
+The analytical results found that __Decision Tree and Random Forest Model has the highest predictive accuracy on heart disease predictive diagnosis__ as both have the highest F1 score, precision_score, recall_score, roc_auc_score and lowest log-loss as compared to __Logistic Regression, Support Vector Machine, K-Nearest Neighbours, Kernel SVM, Random Forest Regression, Gaussian Naive Bayes, Decision Tree Classifier, Random Forest Classifier__
 
-<br>
-<br>
-
-__Variable Importance Bar Chart of CART Model:__ <br>
-![Variable Importance Bar Chart (Optimal CART Model)](https://github.com/alexksh2/Heart_Disease_Predictive_Diagnosis/assets/138288828/d2e662ee-4a1c-4985-ab5d-43f2863e43f6)
-
-<br>
-<br>
-
-__Variable Importance Plot of Random Forest:__ <br>
-![Variable Importance Plot of Random Forest](https://github.com/alexksh2/Heart_Disease_Predictive_Diagnosis/assets/138288828/4036fe18-2a2b-42c4-be40-daf8ef6fe2a2)
-
-
-
-<br>
-<br>
-Conclusion: Both tree models (CART and Random Forest) results indicated that Thal is the most significant variable in heart disease predictive diagnosis. <br>
+For neural network models, it is observed that accuracy increases as number of epochs increases
 
 <br>
 
-# Analysis on Results
-__Thal variables refer to the results of Thallium stress test__, which are often used in nuclear medicine to evaluate blood flow to the heart muscle and __diagnose coronary artery disease__ (Mayo Clinic. 2017). Thallium is a radioactive substance that is injected into the bloodstream for __coronary arteriogram procedure__. <br>
 
-__Normal (Thal 0):__ The results indicates no significant issues concerning blood flow to heart during rest and stress. Therefore, there is a consistent blood supply through coronary arteries to the cardiac muscles. <br>
-
-__Fixed Defect (Thal 1):__ This result suggests that an area of cardiac muscles is not receiving adequate blood flow during rest and stress and this might be indicator of a past heart condition which has lead to permanent damage to the cardiac tissues. <br>
-
-__Reversible Defect (Thal 2):__ This result indicates that there is areduction in blood flow to a certain area of the heart during stress, but the blood flow improves when the stress is relieved.  It suggests a temporary blood flow issue, which may be caused by myocardial ischemia despite mycordial infarction has not occured. <br>
-
-
-The result has also __proven the accuracy of stress thallium-201 scanning procedure__, which is found to be a __highly sensitive and specific screening procedure__ for 52 consecutive myocardial ischemia patients (Stolzenberg, J., & London, R. 1979). <br>
-
+<br>
 
 
 # Citation
