@@ -1,2 +1,93 @@
-# Heart-Disease-Predictive-Diagnosis-Python
-Heart-Disease-Predictive-Diagnosis-Python
+# Heart_Disease_Predictive_Diagnosis
+According to the World Health Organisation, cardiovascular disease are the most significant cause of mortality annually as it results in the deaths of __approximately  17.9 million individuals every year__ (World Health Organization, 2019). While __the healthcare industry generates substantial data__ on patients, diseases and diagnosis, it is found that __these data are not properly analysed__.  (Hassan, 2022) <br>
+
+The key root cause for heart disease often in the context of __sex, smoking, age, family history, poor diet, cholesterol, physical inactivity, high blood pressure, overweightness, and alcohol use.__ <br>
+
+Therefore, the objective of this study is to effectively predicting the presence of coronary heart disease using machine learning classifiers such as __Logistic Regression, K-Nearest Neighbours, Classification and Regression Tree and Random Forest__.
+
+
+
+<br>
+<br>
+
+
+![UDMI_Cardiovascular-Disease](https://github.com/alexksh2/Heart_Disease_Predictive_Diagnosis/assets/138288828/575e295e-984a-4fc9-9acd-7eb3f4c85f71)
+
+# The Dataset
+
+__Content__ <br>
+This data set dates from 1988 and consists of four databases: Cleveland, Hungary, Switzerland, and Long Beach V. It contains 76 attributes, including the predicted attribute, but all published experiments refer to using a subset of 14 of them. The "target" field refers to the presence of heart disease in the patient. It is integer valued 0 = no disease and 1 = disease. <br>
+
+
+
+# Model Results
+__1. Logistic Regression__ <br>
+   Overall Accuracy Rate: 208/250 = __83.2%__ <br>
+   F1 score: 0.8384615 <br>
+   F2 score: 0.8582677 <br>
+
+__2. K-Nearest Neighbours__ <br>
+   Overall Accuracy Rate: 211/250 = __84.4%__ <br>
+   F1 score: 0.8368201 <br>
+   F2 score: 0.8143322 <br>
+
+__3. Classification and Regression Tree (Classification)__ <br>
+   Overall Accuracy Rate: 234/250 = __93.6%__ <br>
+   F1 score: 0.936 <br>
+   F2 score: 0.936 <br>
+
+__4. Random Forest__ <br>
+   Overall Accuracy Rate: 244/250 = __97.6%__ <br>
+   F1 score: 0.9758065 <br>
+   F2 score: 0.9711075 <br>
+   
+
+__Intrepretation of Model Results:__ <br>
+The analytical results found that __Random Forest Model has the highest predictive accuracy on heart disease predictive diagnosis__ as it has the highest overall accuracy rate (97%), F1 score and F2 score as compared to __logistic regression model, K-Nearest Neighbors model and Classification and Regression Tree Model__.
+
+<br>
+<br>
+
+__Variable Importance Bar Chart of CART Model:__ <br>
+![Variable Importance Bar Chart (Optimal CART Model)](https://github.com/alexksh2/Heart_Disease_Predictive_Diagnosis/assets/138288828/d2e662ee-4a1c-4985-ab5d-43f2863e43f6)
+
+<br>
+<br>
+
+__Variable Importance Plot of Random Forest:__ <br>
+![Variable Importance Plot of Random Forest](https://github.com/alexksh2/Heart_Disease_Predictive_Diagnosis/assets/138288828/4036fe18-2a2b-42c4-be40-daf8ef6fe2a2)
+
+
+
+<br>
+<br>
+Conclusion: Both tree models (CART and Random Forest) results indicated that Thal is the most significant variable in heart disease predictive diagnosis. <br>
+
+<br>
+
+# Analysis on Results
+__Thal variables refer to the results of Thallium stress test__, which are often used in nuclear medicine to evaluate blood flow to the heart muscle and __diagnose coronary artery disease__ (Mayo Clinic. 2017). Thallium is a radioactive substance that is injected into the bloodstream for __coronary arteriogram procedure__. <br>
+
+__Normal (Thal 0):__ The results indicates no significant issues concerning blood flow to heart during rest and stress. Therefore, there is a consistent blood supply through coronary arteries to the cardiac muscles. <br>
+
+__Fixed Defect (Thal 1):__ This result suggests that an area of cardiac muscles is not receiving adequate blood flow during rest and stress and this might be indicator of a past heart condition which has lead to permanent damage to the cardiac tissues. <br>
+
+__Reversible Defect (Thal 2):__ This result indicates that there is areduction in blood flow to a certain area of the heart during stress, but the blood flow improves when the stress is relieved.  It suggests a temporary blood flow issue, which may be caused by myocardial ischemia despite mycordial infarction has not occured. <br>
+
+
+The result has also __proven the accuracy of stress thallium-201 scanning procedure__, which is found to be a __highly sensitive and specific screening procedure__ for 52 consecutive myocardial ischemia patients (Stolzenberg, J., & London, R. 1979). <br>
+
+
+
+# Citation
+World Health Organization: WHO. (2019, June 11). Cardiovascular diseases. Who.int; World Health Organization: WHO. https://www.who.int/health-topics/cardiovascular-diseases/#tab=tab_1 <br>
+
+Hassan, Ch. A. ul, Iqbal, J., Irfan, R., Hussain, S., Algarni, A. D., Bukhari, S. S. H., Alturki, N., & Ullah, S. S. (2022). Effectively Predicting the Presence of Coronary Heart Disease Using Machine Learning Classifiers. Sensors, 22(19), 7227. https://doi.org/10.3390/s22197227 <br>
+
+Yenigün, O. (2023, March 29). Handling Class Imbalance in Machine Learning. MLearning.ai. https://medium.com/mlearning-ai/handling-class-imbalance-in-machine-learning-cb1473e825ce <br>
+
+Mayo Clinic. (2017). Nuclear stress test - Mayo Clinic. Mayoclinic.org. https://www.mayoclinic.org/tests-procedures/nuclear-stress-test/about/pac-20385231 <br>
+
+Stolzenberg, J., & London, R. (1979). Reliability of stress thallium-201 scanning in the clinical evaluation of coronary artery disease. Clinical Nuclear Medicine, 4(6), 225–228. https://doi.org/10.1097/00003072-197906000-00001
+
+
